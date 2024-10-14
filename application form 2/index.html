@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLICATION FORM</title>
+<link rel="stylesheet" href="css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section>
+    <div class="container">
+         <div class="apply_Box col-sm-8 offset-sm-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2   bg-info text-dark rounded shadow p-5 ">
+            <h1 class="text-dark" id="heading">Application Form </h1>
+            <form action="" method="get" name="regForm" onsubmit= "validateForm()" >
+
+                <div class="form_Container" >
+                    <div class="form_Control">
+                        <label for=""> First Name</label>
+                        <input type="text" id="FirstName" name="fname" placeholder="Enter Name">
+                    </div>
+
+
+                    <div class="form_Control">
+                        <label for=""> Last Name</label>
+                        <input type="text" id="LastName" name="lname" placeholder="Enter Name">
+                    </div>
+
+                    
+
+                    <div class="EMAIL">
+                        <label for="EMAIL"> Email</label>
+                        <input type="email" id="EMAIL" name="mail" placeholder="Enter Mail"><br/><br/>
+                        <label for=""> Gender</label><br/>
+                        <input type="radio" id="Gn"  name="gender"><label for="">Male</label>
+                         <input type="radio" id="Gn" name="gender"> <label for="">Female</label> <br/>
+                    </div>
+                    
+                    <div class="form_Control">
+                        <label for=""> Job Type</label>
+                        <select id="job" name="jobType" >
+                            <!-- <option value=""> Select job type</option> -->
+                            <option value="" >select your job</option>
+                            <option value="Frontend"> Frontend Developer</option>
+                            <option value="backend"> Backend Developer</option>
+                            <option value="full_stack"> Full stack Developer</option>
+                        </select>
+                    </div>
+                    
+
+
+                    <div class="form_Control">
+                        <label for="Address"> Address</label>
+                        <textarea name="address" id="Address" required cols="20" rows="3" placeholder="Enter address"></textarea>
+                    </div>
+                    
+
+
+                    <div class="form_Control">
+                        <label for="City"> Enter City</label>
+                        <select name="city" id="">
+                        <option value="">select your city</option>
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Peshawer">Islamabad</option>
+                        <option value="Sukkur">Wazirabad</otion>
+                        <option value="Lahore">Lahore<option>
+                        </select>
+                    </div>
+
+
+                    <div class="form_Control">
+                        <label for="Pin_Code"> Password</label>
+                        <input type="password" id="Pin_Code" name="password" placeholder="Enter Code">
+                    </div>
+
+
+                    <div class="form_Control">
+                        <label for="Date"> Date Of Birth</label>
+                        <input type="date" id="Date" name="DateOfBirth">
+                    </div>
+
+
+                    <div class="form_Control">
+                        <label for="Upload"> Upload Your CV</label>
+                        <input type="file" id="Upload" name="choosenFile" placeholder="Upload CV here">
+                  
+                    </div>
+                </div>
+                <button id="button"type="submit"> Submit</button>
+            </form>
+
+    
+       </div> 
+    </div>
+</section>
+</body>
+<script src="form.js"></script>
+
+</html>
+<!-- 
+
+<body>
+    <div class="wrapper ">
+    <div class="container">
+<div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 text-center">
+    
+
+<form action="" class="bg-white rounded shadow p-5">
+    <div class="logo">
+        <img src="happys.jpg" class="rounded-pill  img-fluid" alt="">
+    </div>
+    <h3 class="text-dark fw-bolder fs-4 mt-2">Create an Account</h3>
+    <div class="fw-normal text-muted mb-4">
+        Already have an account?<a href="index.html" class="text-primary fw-bold text-decoration-none">Sign in here</a>
+ </div>
+ <div class="text-center">OR</div>
+  <a href="#" class="btn log-with btn-light w-100 mb-3"> <img src="google-icon.jpg" class="w-25 img-fluid me-3" alt="">Continue with Google</a>
+
+ <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">First Name</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Last Name</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+<span class="text-muted SPAN"> use 8 or more character for strong password</span>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Confirm Password</label>
+  </div>
+
+  <div class="form-floating mb-3">
+  <input type="checkbox" class="">I Agree<a href="#" class="text-primary fw-bold offset-1">Terms and condition</a>
+  </div>
+  <button type="button" class="btn btn-primary my-2 text-center w-100 ">Continue</button>
+
+  
+  
+</form>
+
+</div>
+    </div>
+</div>
+</body>
+</html> -->
